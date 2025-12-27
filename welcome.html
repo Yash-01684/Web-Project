@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Workshop Platform</title>
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="logo">AyrahVerse</div>
+    <nav>
+      <ul>
+        <li><a href="welcome.html">Home</a></li>
+        <li><a href="user.html">User</a></li>
+        <li><a href="student.html">Student</a></li>
+        <li><a href="Login.html">Logout</a></li>
+        <li><button id="theme-toggle" class="theme-btn">Dark Mode</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <marquee behavior="scroll" direction="left" class="announcement-bar">
+    🚀 New Workshop Alert: "Advanced React & Next.js" starting Dec 15th! | 🎓 Get 20% off on Early Bird Registrations for Digital Marketing 101 | 🌟 AyrahVerse: Learning made simple, engaging, and accessible.
+</marquee>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to AyrahVerse</h1>
+    <p>Accelerate Your Career with Hands-On Digital Workshops</p>
+    <div id="event-countdown" style="background: rgba(255,255,255,0.2); display: inline-block; padding: 10px 20px; border-radius: 10px; margin-top: 15px;">
+    <span style="font-weight: bold;">Next Workshop Starts In: </span>
+    <span id="timer">Loading...</span>
+    </div>
+    <button>Explore Workshops</button>
+  </section>
+
+  <!-- Workshops Section -->
+  <section class="workshops">
+    <div class="search-container" style="margin-bottom: 30px;">
+    <input type="text" id="workshopSearch" placeholder="Search for workshops (e.g. Python, Java)..." 
+           style="width: 60%; padding: 12px; border-radius: 25px; border: 1px solid #6b9080;">
+    </div>
+    <h2>Upcoming Workshops</h2>
+    <div class="workshop-list">
+
+      <div class="workshop-card">
+        <h3>Web Development Basics</h3>
+        <p>Learn HTML, CSS, and JavaScript to build your first website.</p>
+        <button>Register</button>
+      </div>
+
+      <div class="workshop-card">
+        <h3>DSA in JAVA</h3>
+        <p>Understanding and Implementing core Data Structures using Java.</p>
+        <button>Register</button>
+      </div>
+
+      <div class="workshop-card">
+        <h3>Python for Beginners</h3>
+        <p>Start coding with Python and build your first mini project.</p>
+        <button>Register</button>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- About Section -->
+  <section class="about">
+    <h2>About AyrahVerse</h2>
+    <p>
+      AyrahVerse is an online platform that helps learners gain practical skills through
+      interactive workshops and live training sessions. Our goal is to make learning
+      simple, engaging, and accessible to everyone.
+    </p>
+  </section>
+
+  <!-- Featured Trainers Section -->
+  <section class="trainers">
+    <h2>Featured Trainers</h2>
+    <div class="trainer-list">
+
+      <div class="trainer-card">
+        <img src="teacher.png" alt="Trainer 1">
+        <h3>Vara Prasad</h3>
+        <p>Web Developer with 10+ years of experience in teaching and building websites.</p>
+      </div>
+
+      <div class="trainer-card">
+        <img src="faculty.jpg" alt="Trainer 2">
+        <h3>Priya Singh</h3>
+        <p>Graphic Designer passionate about creative design and digital art.</p>
+      </div>
+
+      <div class="trainer-card">
+        <img src="profile.jpg" alt="Trainer 3">
+        <h3>Arjun Mehta</h3>
+        <p>Python Instructor helping students build real-world coding skills.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Intro Video or Banner Image Section -->
+  <section class="intro-video">
+    <h2>See How AyrahVerse Works</h2>
+    <div class="video-container">
+      <!-- You can replace the video link or image as needed -->
+      <video controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <!-- Or if you don’t have a video, use an image instead -->
+      <!-- <img src="banner.jpg" alt="SkillHub Intro Banner"> -->
+    </div>
+  </section>
+
+  <!-- Upcoming Events / Calendar Preview Section -->
+  <section class="events">
+    <h2>Upcoming Events</h2>
+    <div class="event-list">
+
+      <div class="event-card">
+        <h3>UI/UX Design Workshop</h3>
+        <p>📅 Date: Nov 20, 2025</p>
+        <p>🕒 Time: 4:00 PM - 6:00 PM</p>
+        <button>Register</button>
+      </div>
+
+      <div class="event-card">
+        <h3>Data Science Basics</h3>
+        <p>📅 Date: Nov 25, 2025</p>
+        <p>🕒 Time: 5:00 PM - 7:00 PM</p>
+        <button>Register</button>
+      </div>
+
+      <div class="event-card">
+        <h3>Public Speaking Session</h3>
+        <p>📅 Date: Dec 2, 2025</p>
+        <p>🕒 Time: 3:00 PM - 5:00 PM</p>
+        <button>Register</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 AyrahVerse | Designed for Learning</p>
+  </footer>
+  <script src="ui.js"></script>
+  <script src="welcome.js"></script>
+</body>
+</html>

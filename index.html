@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Login - AyrahVerse</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form onsubmit="return validateLogin()">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter Username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+            <div class="captcha-box">
+                <span id="captcha-display"></span>
+                <button type="button" onclick="generateCaptcha()" id="refresh-captcha">🔄</button>
+            </div>
+            <label for="captcha-input">Enter Captcha</label>
+            <input type="text" id="captcha-input" placeholder="Type the text above" required>
+
+            <button type="submit" class="login-btn">Login</button>
+
+            <div class="links">
+                <a href="#">Forgot Password?</a>
+            </div>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

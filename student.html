@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Workshop Portal</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    
+    <header>
+    <div class="logo">AyrahVerse</div>
+    <nav>
+      <ul>
+        <li><a href="welcome.html">Home</a></li>
+        <li><a href="user.html">User</a></li>
+        <li><a href="student.html">Student</a></li>
+        <li><a href="Login.html">Logout</a></li>
+        <li><button id="theme-toggle" class="theme-btn">Dark Mode</button></li>
+      </ul>
+    </nav>
+  </header>
+
+    <section id="register">
+        <h2>Register for a Workshop</h2>
+        <p>Fill out the form below to join our next workshop!</p>
+
+        <form>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+            <label for="workshop">Select Workshop:</label><br>
+            <select id="workshop" name="workshop">
+                <option>Web Development Basics</option>
+                <option>Graphic Design Essentials</option>
+                <option>Digital Marketing 101</option>
+                <option>Python for Beginners</option>
+            </select><br><br>
+
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+    <section id="dashboard" style="display: none; border-left: 5px solid #6b9080;">
+    <h2>My Registered Workshops</h2>
+    <div id="my-workshops-list">
+        </div>
+    </section>
+
+    <section id="sessions">
+        <h2>Upcoming Workshop Sessions</h2>
+        <div class="session-card">
+            <h3>Web Development Basics</h3>
+            <p><strong>Date:</strong> 15th November 2025</p>
+            <p><strong>Time:</strong> 10:00 AM - 1:00 PM</p>
+            <p>Learn the basics of HTML, CSS, and how to build your first webpage.</p>
+        </div>
+
+        <div class="session-card">
+            <h3>Graphic Design Essentials</h3>
+            <p><strong>Date:</strong> 20th November 2025</p>
+            <p><strong>Time:</strong> 2:00 PM - 5:00 PM</p>
+            <p>Introduction to color theory, layout design, and tools like Canva.</p>
+        </div>
+    </section>
+
+    <section id="resources">
+        <h2>Post-Training Resources</h2>
+        <ul id="res">
+            <li><a href="#">HTML & CSS Beginner Guide (PDF)</a></li>
+            <li><a href="#">Free Design Templates (ZIP)</a></li>
+            <li><a href="#">Python Practice Exercises (DOCX)</a></li>
+            <li><a href="#">Workshop Video Recordings (YouTube)</a></li>
+        </ul>
+    </section>
+
+    <footer>
+    <p>&copy; 2025 AyrahVerse | Designed for Learning</p>
+  </footer>
+  <script src="student.js"></script>
+  <script src="ui.js"></script>
+</body>
+</html>

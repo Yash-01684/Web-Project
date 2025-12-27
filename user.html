@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer Dashboard - AyrahVerse</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="user.css">
+</head>
+<body>
+    <header>
+        <div class="logo">AyrahVerse</div>
+        <nav>
+            <ul>
+                <li><a href="welcome.html">Home</a></li>
+                <li><a href="user.html">User</a></li>
+                <li><a href="student.html">Student</a></li>
+                <li><a href="Login.html">Logout</a></li>
+                <li><button id="theme-toggle" class="theme-btn">Dark Mode</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-hero-bg">
+        <h2>Trainer Management Portal</h2>
+        <p>Schedule workshops, manage resources, and track student enrollment.</p>
+    </section>
+
+    <section class="registration">
+        <h2 id="schedule-form-title">Schedule a New Workshop</h2>
+        <form id="scheduleForm">
+            <input type="hidden" id="editScheduleIndex" value="-1">
+            
+            <label for="wsTitle">Workshop Title:</label>
+            <input type="text" id="wsTitle" required placeholder="e.g., Advanced JavaScript">
+
+            <label for="wsDate">Date:</label>
+            <input type="text" id="wsDate" required placeholder="e.g., Dec 30, 2025">
+
+            <label for="wsTime">Time:</label>
+            <input type="text" id="wsTime" required placeholder="e.g., 10:00 AM - 12:00 PM">
+
+            <label for="wsInstructor">Instructor:</label>
+            <input type="text" id="wsInstructor" required placeholder="Instructor Name">
+
+            <button type="submit" id="saveScheduleBtn" class="btn-primary">Schedule Workshop</button>
+        </form>
+    </section>
+
+    <section class="schedule">
+        <h2>Current Workshop Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Workshop Title</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Instructor</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="scheduleBody">
+                </tbody>
+        </table>
+    </section>
+
+    <section class="registration">
+        <h2 id="resource-form-title">Manage Workshop Resources</h2>
+        <form id="resourceForm">
+            <input type="hidden" id="editResourceIndex" value="-1">
+            <label for="resTitle">Resource Title:</label>
+            <input type="text" id="resTitle" required placeholder="e.g., Python Basics PDF">
+            <label for="resLink">Link:</label>
+            <input type="text" id="resLink" required placeholder="https://...">
+            <button type="submit" id="saveResourceBtn" class="btn-primary">Add Resource</button>
+        </form>
+    </section>
+
+    <section class="schedule">
+        <h2>Active Resources</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Link</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="resourceBody"></tbody>
+        </table>
+    </section>
+
+    <section class="schedule">
+        <h2>Enrolled Students</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Email</th>
+                    <th>Workshop</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="studentBody"></tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 AyrahVerse | Designed for Learning</p>
+    </footer>
+
+    <script src="user.js"></script>
+</body>
+</html>

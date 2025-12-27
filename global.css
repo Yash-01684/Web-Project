@@ -1,0 +1,82 @@
+/* global.css - The master style sheet for AyrahVerse */
+
+/* 1. Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f7fb; /* Light grey background from user.css */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 2. Header & Navigation (Using #6b9080) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6b9080; /* Your signature green */
+    color: white;
+    padding: 15px 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #cce3de; /* Hover effect using your mint color */
+}
+
+/* 3. Common Section Accents (Using #cce3de) */
+.about-hero-bg {
+    background-color: #cce3de; /* Your mint accent color */
+    padding: 25px 30px;
+    text-align: center;
+}
+
+/* 4. Footer (Using #6b9080) */
+footer {
+    text-align: center;
+    background-color: #6b9080;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* 5. Universal Button Style */
+.btn-primary {
+    background-color: #6b9080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #557a6b; /* Slightly darker shade for feedback */
+}
